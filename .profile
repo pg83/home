@@ -1,5 +1,9 @@
 alias go='ssh -l pg '
 
+if test -f /lib/x86_64-linux-gnu/libnss_sss.so.2; then
+    export LD_PRELOAD=/lib/x86_64-linux-gnu/libnss_sss.so.2
+fi
+
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR=ted
 export LANG=ru_RU.UTF-8
