@@ -11,15 +11,16 @@ set -e
 set -x
 
 nix-env -i mc python3 subversion git
-python3 -m venv $HOME/.venv
+python3 -m venv "$HOME/.venv"
 
 python3 -m pip install --upgrade pip
 python3 -m pip install pygments pyyaml jinja2
 
 (
-    cd $HOME/.boot
+    cd "$HOME/.boot"
 
     git clone git@github.com:pg83/zm.git
     ln -s zm/ted/ted ./
+    ln -s zm/mix/mix ./
 )
 EOF
