@@ -10,11 +10,18 @@ sh << EOF
 set -e
 set -x
 
+nix-env -i mc python3 subversion git
+EOF
+
+#read new env
+sh << EOF
+set -e
+set -x
+
 if test -f /lib/x86_64-linux-gnu/libnss_sss.so.2; then
     export LD_PRELOAD=/lib/x86_64-linux-gnu/libnss_sss.so.2
 fi
 
-nix-env -i mc python3 subversion git
 python3 -m venv "$HOME/.venv"
 
 python3 -m pip install --upgrade pip
