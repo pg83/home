@@ -3,11 +3,15 @@
 set -e
 set -x
 
-mkdir -p "$HOME/.config" || true
-rm -rf "$HOME/.config/mc" || true
+for d in .config .bin; do
+    mkdir -p "$HOME/$d" || true
+done
 
+rm -rf "$HOME/.config/mc" || true
 cp -R mc "$HOME/.config/"
-cp .profile "$HOME"
-rm "$HOME/.bash_profile" || true
-rm "$HOME/.bashrc" || true
-mkdir "$HOME/.bin" || true
+
+cp profile "$HOME/.profile"
+
+for x in .bash_profile .bashrc; do
+    rm "$HOME/$x" || true
+done

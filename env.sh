@@ -21,12 +21,6 @@ set -e
 set -x
 
 python3 -m venv "$HOME/.venv"
-EOF
-
-#read new env
-sh -l << EOF
-set -e
-set -x
 
 python3 -m pip install --upgrade pip
 python3 -m pip install pygments pyyaml jinja2
