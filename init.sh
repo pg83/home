@@ -8,6 +8,6 @@ set -x
 curl --output master.zip -L "https://github.com/pg83/home/archive/refs/heads/master.zip"
 unzip master.zip
 
-cd home
+cd home-master
 
 sh ./run.sh
