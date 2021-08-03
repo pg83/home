@@ -9,6 +9,7 @@ export LANG=ru_RU.UTF-8
 export LC_ALL=ru_RU.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
+export Y_FAST_CANCEL=yes
 
 COL_LY="\[\e[1;33m\]"
 COL_LR="\[\e[1;31m\]"
