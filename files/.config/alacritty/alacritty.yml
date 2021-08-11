@@ -419,7 +419,7 @@ cursor:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /Users/pg83/.nix-profile/bin/tmux
+  program: /Users/pg/.nix-profile/bin/tmux
 #  args:
 #    - --login
 
