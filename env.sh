@@ -10,7 +10,7 @@ sh -l << EOF
 set -e
 set -x
 
-nix-env -i mc python3 subversion git
+nix-env -i mc python3 subversion git tmux
 EOF
 
 sh ./cfg.sh
