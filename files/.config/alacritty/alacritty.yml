@@ -419,9 +419,8 @@ cursor:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /Users/pg/.nix-profile/bin/tmux
-#  args:
-#    - --login
+#  program: /bin/bash
+  program: /Users/pg/.bin/tmux
 
 # Startup directory
 #

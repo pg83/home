@@ -20,6 +20,4 @@ COL_RST="\[\e[0m\]"
 
 export PS1="$COL_LR\u$COL_LY@$COL_LG$(hostname)$COL_LY:$COL_LB\w$COL_RST "
 
-. "$HOME/.nix-profile/etc/profile.d/nix.sh" || true
-
-export PATH="$HOME/.venv1/bin:$HOME/.venv/bin:$HOME/.bin:$HOME/1/arcadia:$HOME/arcadia:$HOME/Sources/arcadia:$PATH"
+export PATH="$HOME/.venv1/bin:$HOME/.venv/bin:$HOME/mix/realm/stable/bin:$HOME/.bin:$HOME/1/arcadia:$HOME/arcadia:$HOME/Sources/arcadia:$PATH"
